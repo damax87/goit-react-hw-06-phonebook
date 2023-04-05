@@ -1,10 +1,10 @@
-import { useState } from "react";
 import propTypes from 'prop-types';
+import { useState } from "react";
 import { FormContact } from "./ContactForm.style";
 import { FormInput } from "./ContactForm.style";
 import { FormButton } from "./ContactForm.style";
 
-export default function ContactForm( {handleSubmit} ) {
+export const ContactForm = ({ handleSubmit }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
